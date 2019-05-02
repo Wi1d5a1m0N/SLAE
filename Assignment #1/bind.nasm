@@ -18,7 +18,7 @@ _start:
 	xor ecx, ecx		;set ecx to 0
 	xor edx, edx		;set edx to 0
 	mov al, 102		;socketcall() syscall = 102
-	mov bl, 1		;call type = 2
+	mov bl, 1		;call type = 1
 	push ecx		;tcp protocol = 0
 	push byte 1		;sock_stream = 1
 	push byte 2		;PF_INET = 2
